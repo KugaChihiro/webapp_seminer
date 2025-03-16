@@ -16,3 +16,57 @@
     --color-hero-overlay: rgba(57, 24, 111, 0.4);
     --color-course-overlay: rgba(32, 8, 19, 0.63);
   }
+
+/* global */
+*,
+*::before,
+*::after {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family:var(--font-family-body)
+}
+
+img {
+  display:block;
+}
+
+/* header */
+
+.header {
+  margin:0;
+  padding:0;
+  height: 80px;
+  width:100%;
+  top:0;
+  left:0;
+  position:fixed;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-background-black);
+}
+
+.header_contents {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_logo {
+  height: 50px;
+}
+
+/* レスポンシブ対応（モバイル端末）*/
+
+@media (max-width: 750px) {
+
+  .header {
+    height:60px,
+  }
+
+ .header_logo{
+   height:30px
+ }
+ 
+}
