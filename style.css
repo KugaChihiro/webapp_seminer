@@ -57,6 +57,46 @@ img {
   height: 50px;
 }
 
+/* hero */
+
+.hero {  
+  background-image: url(./img/hero.png);
+  width:auto;
+  height: 497px;
+}
+
+.hero_contents {
+  display:flex;
+  width:100%;
+  max-width:1000px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 94px 220px;
+}
+
+.hero_text {
+  display: flex;
+  flex-direction: column;
+  gap:30px
+}
+
+.hero_main_text {
+  margin:0;
+  font-family: var(--font-family-heading);
+  font-size: 64px;
+  color: var(--color-accent-yellow);
+  letter-spacing: 0.05em;
+}
+
+.hero_main_text_pink {
+  color:var(--color-accent-red)
+}
+
+.hero_sub_text {
+  color:var(--color-accent-yellow);
+  font-size: 16px;
+}
+
 /* レスポンシブ対応（モバイル端末）*/
 
 @media (max-width: 750px) {
