@@ -347,6 +347,133 @@ img {
   width:40px;
 }
 
+/* sign up & footer */
+
+.signup {
+  width:100%;
+  background-color: var(--color-accent-yellow);
+  display:flex;
+  justify-content: center;
+  padding:80px 280px
+}
+
+.signup_contents {
+  width:880px;
+  gap:40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup_title_text {
+  text-align: center;
+  width: 100%;
+  font-family: var(--font-family-heading);
+  font-weight: 400;
+  font-size:32px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  padding: 0;
+  margin: 0;
+}
+
+.siginup_description_text {
+  font-family: var(--font-family-body);
+  font-weight: 400;
+  font-size:16px;
+  line-height: 100%;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.signup_forms {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap:20px;
+}
+
+.signup_forms_each {
+  width:100%;
+  display:flex;
+}
+
+.forms_label {
+  width:250px;
+  height:auto;
+  font-family: var(--font-family-body);
+  font-size: 20px;
+}
+
+.forms_input {
+  width:550px;
+  background-color: var(--color-form-background-yellow);
+  border: 1px solid var(--color-form-border-red);
+  border-radius: 8px;
+  padding: 10px; 
+}
+
+
+.signup_button {
+  width:800px;
+  background-color: var(--color-accent-red);
+  box-shadow:4px 4px 0px var(--color-black);
+  margin:0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  margin:0;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+.signup_button:hover {
+  background-color: var(--color-button-hover-red);
+  box-shadow:12px 12px 2px var(--color-black);
+  transform: translate(-8px, -8px);
+}
+
+.signup_button_main {
+  display:flex;
+  justify-content: center;
+  width:670px;
+}
+
+.signup_button_text {
+  font-family: var(--font-family-body);
+  font-size: 20px;
+  color: var(--color-white);
+  text-align: center;
+  width: auto;
+  margin: 0;
+  padding:15.5px 40px 15.5px 40px;
+  line-height:100%;
+  letter-spacing:0;
+  font-weight: 400;
+}
+
+.signup_button_allow {
+  width:40px;
+}
+
+.footer {
+  margin-top: 16px;
+  padding:60px 0;
+  background-color: var(--color-background-black);
+  display: flex;
+  justify-content: center;
+}
+
+.footer_text {
+  width: auto;
+  font-family: var(--font-family-body);
+  font-size:16px;
+  line-height: 100%;
+  letter-spacing: 0;
+  font-weight: 400;
+  color:var(--color-white)
+}
 
 /* レスポンシブ対応（モバイル端末）*/
 
@@ -432,5 +559,59 @@ img {
   .courses_botton_text { 
     font-size:14px;
   }
+
+  .signup {
+    padding:40px 20px;
+  }
+
+  .signup_contents {
+    width:350px;
+  }
+
+  .signup_title_text {
+    letter-spacing: 0;
+    font-size:24px;
+  }
+
+  .signup_forms {
+    gap:10px;
+  }
+
+  .signup_forms_each {
+    flex-direction: column;
+    gap:10px;
+  }
+
+  .forms_label {
+    width:auto;
+    font-size: 16px;
+  }
+
+  .forms_input {
+    width:350px;
+    padding: 8px;   
+  }
+
+  .signup_button {
+    width:350px;
+  }
+
+  .signup_button_main {
+    width:270px;
+  }
+
+  .signup_button_text {
+    font-size: 14px;
+  }
+
+  .footer {
+    margin-top: 14px;
+    padding:40px 0;
+  }
+
+  .footer_text {
+    font-size: 12px;
+  }
+
 }
 
