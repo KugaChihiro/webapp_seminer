@@ -99,5 +99,45 @@
             </div>
         </div>
     </section>
+    <section class = "signup">
+        <div class = "signup_contents">
+            <h2 class = "signup_title_text">Let's Try!</h2>
+            <div>
+                <p class = "siginup_description_text">
+                    Grand Playersでは、ご利用登録いただけた方に対し、３レッスン分の無料枠をプレゼントいたします！</br>
+                    今すぐレッスンを始めて、”Grand”なプレイヤーを目指しましょう！</br>
+                    お申し込みは下記フォームからどうぞ！
+                </p>
+            </div>
+            <form method="POST" class = "signup_forms">
+                <div class = "signup_forms_each">
+                    <label for="name" class = "forms_label">お名前</label>
+                    <input type="text" id="name" name="name"  placeholder = "エドワード ヴァン 太郎" class = "forms_input" required>
+                </div>
+                <div class = "signup_forms_each">
+                    <label for="email" class = "forms_label">メールアドレス</label>
+                    <input type="email" id="email" name="email" placeholder = "grand.players@example.com" class = "forms_input" required>
+                </div>
+                <div class = "signup_forms_each">
+                    <label for="guitar" class = "forms_label">ギター歴（年）</label>
+                    <input type="number" id="guitar" name="guitar" min="0" placeholder = "3" class = "forms_input" required> 
+                </div>
+                <div class = "signup_forms_each">       
+                    <label for="message" class = "forms_label">意気込みをどうぞ！</label>
+                    <textarea id="message" name="message" placeholder="イカすギターソロをかましてモテた～い！" class="forms_input" required></textarea>
+                </div>
+            </form>  
+            <button type="submit" class="signup_button">
+                <div class = "signup_button_main">
+                    <p class="signup_button_text">送信する</p>
+                </div>
+                <img src="./img/Vector.svg" alt="矢印" class="signup_button_arrow">
+            </button>            
+        </div>
+        </div>
+    </section>
+    <footer class ="footer">
+        <small class = "footer_text">&copy;2023 GrandPlayers</small>
+    </footer>
 </body>
 </html>
